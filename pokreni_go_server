@@ -1,0 +1,4 @@
+go mod init multiplayer-game
+go get github.com/gorilla/websocket
+go run main.go
+

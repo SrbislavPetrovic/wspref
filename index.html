@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head><title>WebSocket Test</title></head>
+<body>
+  <h1>WebSocket igra</h1>
+  <input id="msg" placeholder="Poruka">
+  <button onclick="send()">Pošalji</button>
+  <pre id="log"></pre>
+
+  <script>
+    const ws = new WebSocket("ws://localhost:8080/ws");
+    const log = document.getElementById("log");
+
+    ws.onmessage = e => {
+      log.textContent += "\\n" + e.data;
+    };
+
+    function send() {
+      const msg = document.getElementById("msg").value;
+      ws.send(msg);
+    }
+  </script>
+</body>
+</html>
+
