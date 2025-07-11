@@ -1,0 +1,65 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f0f0f0; /* svetla podloga */
+  color: #222;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 20px;
+  color: #444;
+}
+
+#game {
+  margin: 30px auto;
+  max-width: 800px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+#actions {
+  margin-top: 20px;
+}
+
+#actions button {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  margin: 5px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#actions button:hover {
+  background-color: #3385ff;
+}
+
+.card {
+  display: inline-block;
+  margin: 5px;
+  padding: 12px;
+  background-color: #ffffff;
+  color: #000;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#messages {
+  margin-top: 20px;
+  font-size: 18px;
+  min-height: 40px;
+  color: #333;
+}
+
+.hidden {
+  display: none;
+}
